@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Goblin Helper</title>
+<meta name="description" content="Qué recolecta Goblin Helper, qué no, y a dónde va. Nada se recolecta hasta que vos lo prendas.">
+<style>
+  :root{
+    --fondo:#0d0d0d; --superficie:#111113; --elevada:#17171c;
+    --linea:#1f1f26; --linea-fuerte:#2a2a2a;
+    --titulo:#ffffff; --cuerpo:#d7d9de; --secundario:#9ca3af; --apagado:#6b7280;
+    --accion:#fbbf24; --bien:#22c55e; --mal:#ef4444;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--fondo); color:var(--cuerpo);
+    font:16px/1.65 "Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  }
+  .envoltura{max-width:760px; margin:0 auto; padding:0 16px 72px}
+  header{border-bottom:1px solid var(--linea); margin-bottom:40px; padding:48px 0 28px}
+  .idiomas{font-size:13px; color:var(--apagado); margin-bottom:22px}
+  .idiomas a{color:var(--accion); text-decoration:none; border-bottom:1px solid transparent}
+  .idiomas a:hover{border-bottom-color:var(--accion)}
+  .idiomas span[aria-current]{color:var(--cuerpo)}
+  h1{font-size:30px; line-height:1.25; margin:0 0 10px; color:var(--titulo); font-weight:600;
+     letter-spacing:-.01em}
+  .producto{font-size:14px; color:var(--accion); letter-spacing:.09em;
+            text-transform:uppercase; font-weight:700; margin:0 0 14px}
+  .fecha{font-size:13px; color:var(--apagado); margin:0}
+  h2{font-size:21px; color:var(--titulo); font-weight:600; margin:48px 0 14px;
+     letter-spacing:-.005em}
+  h3{font-size:16px; color:var(--titulo); font-weight:600; margin:28px 0 8px}
+  p{margin:0 0 15px}
+  a{color:var(--accion)}
+  strong{color:var(--titulo); font-weight:600}
+  code{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; font-size:.88em;
+       background:var(--elevada); border:1px solid var(--linea); border-radius:4px;
+       padding:1px 5px; color:var(--cuerpo)}
+  ul{margin:0 0 15px; padding-left:22px}
+  li{margin:0 0 7px}
+
+  /* El recuadro con la esquina cortada: la misma forma que usa la app. */
+  .nota{
+    background:rgba(251,191,36,.07); border-radius:10px;
+    padding:16px 18px 17px 22px; margin:22px 0;
+    clip-path:polygon(15px 0, 100% 0, 100% 100%, 0 100%, 0 15px);
+  }
+  .nota p:last-child{margin-bottom:0}
+  .nota.fuerte{background:rgba(251,191,36,.11)}
+
+  table{width:100%; border-collapse:collapse; margin:20px 0; font-size:15px}
+  caption{text-align:left; font-size:13px; color:var(--apagado); padding-bottom:10px}
+  th,td{text-align:left; padding:11px 12px; border-bottom:1px solid var(--linea)}
+  th{color:var(--secundario); font-weight:600; font-size:13px;
+     text-transform:uppercase; letter-spacing:.06em}
+  tbody tr:last-child td{border-bottom:none}
+  td.estado{color:var(--bien); white-space:nowrap; font-weight:600}
+
+  .hosts{margin:20px 0}
+  .hosts dt{color:var(--titulo); font-weight:600; font-size:15px; margin:18px 0 4px}
+  .hosts dd{margin:0 0 4px; font-size:14px; color:var(--secundario);
+            font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; word-break:break-all}
+
+  footer{margin-top:56px; padding-top:26px; border-top:1px solid var(--linea);
+         font-size:13px; color:var(--apagado)}
+  footer a{color:var(--secundario)}
+  @media (max-width:560px){
+    h1{font-size:25px} h2{font-size:19px} body{font-size:15px}
+    header{padding-top:34px}
+    th,td{padding:9px 8px; font-size:14px}
+  }
+</style>
+</head>
+<body>
+<div class="envoltura">
+
+<header>
+  <nav class="idiomas"><a href="index.html">English</a> · <span aria-current="page">Español</span></nav>
+  <p class="producto">Goblin Helper</p>
+  <h1>Política de privacidad</h1>
+  <p class="fecha">Última actualización: 14 de octubre de 2026</p>
+</header>
+
+<div class="nota fuerte">
+  <p><strong>La versión corta.</strong> Goblin Helper funciona en tu computadora. No hay cuenta,
+  no hay registro, no hay analíticas y no hay ningún servidor nuestro que junte nada sobre vos.
+  Todo lo que podría leer algo de tu máquina viene <strong>apagado de fábrica</strong> y se queda
+  apagado hasta que vos lo prendas. Y si lo volvés a apagar, lo que había juntado se borra.</p>
+</div>
+
+<h2>Quiénes somos</h2>
+<p>Goblin Helper lo hace <strong>Hallmelyn</strong>. Nos escribís a
+<a href="mailto:goblinhelpercompany@gmail.com">goblinhelpercompany@gmail.com</a>.</p>
+<p>Esta política cubre la aplicación de escritorio Goblin Helper para Windows. Esta página, por
+su parte, no carga fuentes, scripts ni imágenes de ningún otro lado: acá tampoco hay nada que
+pueda seguirte.</p>
+
+<h2>Nada se recolecta hasta que vos lo prendas</h2>
+<p>Goblin Helper puede aprender cosas de tu computadora para que el goblin te sirva más: qué
+programas tenés, a qué jugás, qué temperatura tiene tu equipo. <strong>Nada de eso pasa por
+defecto.</strong> Cada fuente de información es un interruptor aparte, que está en la app en
+<em>Perfil → Privacidad</em>, y todos vienen apagados.</p>
+
+<table>
+  <caption>Los seis interruptores, y qué permite cada uno</caption>
+  <thead>
+    <tr><th>Interruptor</th><th>Qué permite</th><th>De fábrica</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Programas instalados</td><td>Leer la lista de software instalado en tu PC</td><td class="estado">Apagado</td></tr>
+    <tr><td>Tiempo de uso</td><td>Registrar cuánto tiempo pasás en cada programa</td><td class="estado">Apagado</td></tr>
+    <tr><td>Títulos de ventana</td><td>Leer el título de la ventana en la que estás trabajando</td><td class="estado">Apagado</td></tr>
+    <tr><td>Historial del navegador</td><td>Leer categorías de navegación de tu historial</td><td class="estado">Apagado</td></tr>
+    <tr><td>Tips generados por IA</td><td>Pedirle tips a un proveedor de IA (manda un pedido afuera)</td><td class="estado">Apagado</td></tr>
+    <tr><td>Clima de tu ciudad</td><td>Consultar el pronóstico de la ciudad que configures (manda un pedido afuera)</td><td class="estado">Apagado</td></tr>
+  </tbody>
+</table>
+
+<p>Hay un séptimo interruptor, separado de estos, que decide otra cosa: <strong>si lo que la app
+ya sabe de tu máquina puede viajar a un proveedor de IA en internet.</strong> También viene
+apagado. Está explicado en <a href="#ia">El asistente de IA</a>.</p>
+
+<div class="nota">
+  <p><strong>Apagar un interruptor borra lo que había juntado.</strong> No es que deje de
+  recolectar de ahí en adelante y se quede con lo de ayer: lo que esa fuente había reunido se
+  borra de tu perfil, y el cambio se escribe al disco en el acto —no tres segundos después—, así
+  que cerrar la app justo después de revocar no lo puede deshacer.</p>
+</div>
+
+<h2>Dónde vive tu información</h2>
+<p>Todo lo que Goblin Helper guarda sobre vos es un archivo en tu propia computadora, en:</p>
+<p><code>%LOCALAPPDATA%\GoblinHelper</code></p>
+<p>Ahí están tu perfil, tus ajustes, tus recordatorios, tus contraseñas guardadas, tus récords de
+los juegos, los tips que te mostró y el historial de las mediciones de tu equipo. Nada de eso se
+copia a ningún otro lado. No hay cuenta que crear ni sesión que iniciar, así que no hay una copia
+de tus datos en ningún servidor nuestro — porque no hay servidor nuestro.</p>
+
+<h3>Tus contraseñas</h3>
+<p>El gestor de contraseñas cifra su bóveda en tu máquina antes de escribirla al disco. Esa
+bóveda nunca sale de tu computadora y no se manda a ningún lado, bajo ninguna circunstancia. No
+la podemos leer y no te la podemos recuperar.</p>
+
+<h2>Cuándo la app sale a internet, y a dónde</h2>
+<p>Goblin Helper funciona entero sin conexión. Cuando alguna función sí necesita la red, sólo
+puede contactar hosts de una lista fija que está adentro del programa: cualquier otro destino se
+rechaza antes de hacer el pedido. Ésta es la lista completa, y para qué es cada entrada.</p>
+
+<dl class="hosts">
+  <dt>Proveedores de IA — sólo el que elijas, y sólo si lo configuraste</dt>
+  <dd>api.groq.com · models.github.ai · openrouter.ai · integrate.api.nvidia.com ·
+      api.mistral.ai · api.together.xyz · api.deepseek.com · api.openai.com ·
+      api.anthropic.com · generativelanguage.googleapis.com</dd>
+
+  <dt>Clima — sólo si lo prendés, y sólo el nombre de tu ciudad</dt>
+  <dd>api.open-meteo.com · geocoding-api.open-meteo.com</dd>
+
+  <dt>Instalar Ollama, si elegís correr una IA local</dt>
+  <dd>api.github.com · github.com · objects.githubusercontent.com ·
+      release-assets.githubusercontent.com</dd>
+
+  <dt>Componentes opcionales, cuando le pedís a la app que instale uno</dt>
+  <dd>pypi.org · files.pythonhosted.org · alphacephei.com</dd>
+
+  <dt>Ficha pública de la tienda, para reconocer el género de un juego detectado</dt>
+  <dd>store.steampowered.com</dd>
+
+  <dt>Mandarnos una sugerencia o reportar un error, cuando apretás enviar</dt>
+  <dd>goblin-relay.goblinhelpercompany.workers.dev · discord.com · discordapp.com</dd>
+</dl>
+
+<p>Si no prendés nada y no usás la IA, la app no contacta a ninguno.</p>
+
+<h2 id="ia">El asistente de IA</h2>
+<p>Las funciones de IA son opcionales y no vienen configuradas. Las podés usar de dos
+maneras:</p>
+<ul>
+  <li><strong>Un modelo local, con Ollama.</strong> Todo se queda en tu computadora. No se manda
+  nada a ninguna parte.</li>
+  <li><strong>Un proveedor de internet, con tu propia clave de API.</strong> La cuenta y la clave
+  son tuyas; nosotros no estamos en el medio y nunca vemos tu clave, que se guarda sólo en tu
+  máquina.</li>
+</ul>
+
+<p>Cuando usás un proveedor de internet, tu pregunta viaja a ese proveedor y queda sujeta a la
+política de privacidad de ellos, no a la nuestra.</p>
+
+<div class="nota">
+  <p><strong>El contexto es una decisión aparte.</strong> La app puede mejorar las respuestas
+  contándole al modelo cosas que sabe de tu máquina —tu hardware, los programas que tenés, el
+  juego al que estás jugando—. Eso <strong>sólo pasa si prendés «compartir contexto con la IA en
+  la nube»</strong>, que viene apagado. Con eso apagado tu pregunta se contesta igual; se
+  contesta sin saber nada de vos.</p>
+</div>
+
+<h2>Sugerencias y reportes de error</h2>
+<p>Si usás el formulario de la app para mandarnos una sugerencia, un error o una queja, lo que
+escribiste y las capturas que hayas adjuntado nos llegan a nosotros. No se adjunta nada solo, y
+no se manda nada hasta que apretás el botón. Lo usamos para arreglar y mejorar la app, y no lo
+usamos para ninguna otra cosa.</p>
+
+<h2>Menores</h2>
+<p>Goblin Helper no está dirigido a menores de 13 años y no recolectamos nada de ellos a
+sabiendas. Como la app no crea cuentas ni junta información personal en ningún servidor, no hay
+nada que podamos tener.</p>
+
+<h2>Tus opciones, y cómo ejercerlas</h2>
+<p>Como todo vive en tu computadora, el control lo tenés vos directamente:</p>
+<ul>
+  <li><strong>Ver qué está prendido:</strong> <em>Perfil → Privacidad</em> muestra cada
+  interruptor y cómo está.</li>
+  <li><strong>Retirar un permiso:</strong> apagá el interruptor. Lo que esa fuente juntó se borra
+  en ese momento.</li>
+  <li><strong>Exportar tus datos:</strong> la app puede escribirte todo lo que tiene sobre
+  vos.</li>
+  <li><strong>Borrar todo:</strong> desinstalá la app y borrá la carpeta
+  <code>%LOCALAPPDATA%\GoblinHelper</code>. No sobrevive nada, en ningún lado.</li>
+</ul>
+<p>Si tenés una duda sobre cualquiera de estas cosas, escribinos y te contestamos.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si cambiamos lo que la app hace con tu información, actualizamos esta página y cambiamos la
+fecha de arriba. Los cambios importantes también quedan anotados en las notas de versión de la
+página de la tienda.</p>
+
+<footer>
+  <p>© 2026 Hallmelyn. Goblin Helper.<br>
+  Contacto: <a href="mailto:goblinhelpercompany@gmail.com">goblinhelpercompany@gmail.com</a></p>
+</footer>
+
+</div>
+</body>
+</html>
