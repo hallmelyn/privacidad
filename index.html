@@ -61,7 +61,7 @@
   .hosts{margin:20px 0}
   .hosts dt{color:var(--titulo); font-weight:600; font-size:15px; margin:18px 0 4px}
   .hosts dd{margin:0 0 4px; font-size:14px; color:var(--secundario);
-            font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; word-break:break-all}
+            font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; word-break:normal; overflow-wrap:anywhere}
 
   footer{margin-top:56px; padding-top:26px; border-top:1px solid var(--linea);
          font-size:13px; color:var(--apagado)}
@@ -85,10 +85,11 @@
 
 <div class="nota fuerte">
   <p><strong>The short version.</strong> Goblin Helper runs on your computer. There is no
-  account, no sign-up, no analytics and no server of ours that collects anything about you.
+  account, no sign-up and no analytics, and nothing about you is sent to us in the background.
   Every feature that could read something about your machine is <strong>switched off when you
   install it</strong>, and stays off until you turn it on yourself. If you turn one off again,
-  what it had collected is deleted.</p>
+  what it had collected is deleted. The only thing that ever reaches us is a suggestion or a bug
+  report, and only when you write one and press send.</p>
 </div>
 
 <h2>Who we are</h2>
@@ -136,7 +137,10 @@ the internet.</strong> It is also off by default. See <a href="#ia">The AI assis
 <p>That includes your profile, your settings, your reminders, your saved passwords, your game
 scores, the tips you have been shown and the history of your hardware readings. None of it is
 copied anywhere else. There is no account to create and nothing to log into, so there is no
-copy of your data on any server of ours — because there is no server of ours.</p>
+copy of your data waiting on a server somewhere: we run no service that stores it. The one
+server we do operate is the relay that carries a suggestion or a bug report to us when you send
+one, and it only ever carries what you wrote yourself — see
+<a href="#sugerencias">Suggestions and bug reports</a>.</p>
 
 <h3>Your passwords</h3>
 <p>The built-in password manager encrypts its vault on your machine before writing it to disk.
@@ -195,11 +199,13 @@ subject to their privacy policy, not ours.</p>
   it is just answered without knowing anything about you.</p>
 </div>
 
-<h2>Suggestions and bug reports</h2>
+<h2 id="sugerencias">Suggestions and bug reports</h2>
 <p>If you use the in-app form to send us a suggestion, a bug report or a complaint, what you
-wrote and any screenshots you attached are sent to us. Nothing is attached automatically, and
-nothing is sent unless you press the button. We use it to fix and improve the app, and we do
-not use it for anything else.</p>
+wrote and any screenshots you attached are sent to us. They travel through a relay we operate at
+<code>goblin-relay.goblinhelpercompany.workers.dev</code>, which passes the message on to us and
+keeps nothing else: no profile of you, no identifier, nothing about your machine. Nothing is
+attached automatically, and nothing is sent unless you press the button. We use it to fix and
+improve the app, and we do not use it for anything else.</p>
 
 <h2>Children</h2>
 <p>Goblin Helper is not directed at children under 13, and we do not knowingly collect anything

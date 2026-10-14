@@ -61,7 +61,7 @@
   .hosts{margin:20px 0}
   .hosts dt{color:var(--titulo); font-weight:600; font-size:15px; margin:18px 0 4px}
   .hosts dd{margin:0 0 4px; font-size:14px; color:var(--secundario);
-            font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; word-break:break-all}
+            font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; word-break:normal; overflow-wrap:anywhere}
 
   footer{margin-top:56px; padding-top:26px; border-top:1px solid var(--linea);
          font-size:13px; color:var(--apagado)}
@@ -85,9 +85,11 @@
 
 <div class="nota fuerte">
   <p><strong>La versión corta.</strong> Goblin Helper funciona en tu computadora. No hay cuenta,
-  no hay registro, no hay analíticas y no hay ningún servidor nuestro que junte nada sobre vos.
-  Todo lo que podría leer algo de tu máquina viene <strong>apagado de fábrica</strong> y se queda
-  apagado hasta que vos lo prendas. Y si lo volvés a apagar, lo que había juntado se borra.</p>
+  no hay registro y no hay analíticas, y no nos llega nada tuyo por detrás. Todo lo que podría
+  leer algo de tu máquina viene <strong>apagado de fábrica</strong> y se queda apagado hasta que
+  vos lo prendas. Y si lo volvés a apagar, lo que había juntado se borra. Lo único que nos llega
+  alguna vez es una sugerencia o un reporte de error, y sólo cuando lo escribís vos y apretás
+  enviar.</p>
 </div>
 
 <h2>Quiénes somos</h2>
@@ -135,7 +137,10 @@ apagado. Está explicado en <a href="#ia">El asistente de IA</a>.</p>
 <p>Ahí están tu perfil, tus ajustes, tus recordatorios, tus contraseñas guardadas, tus récords de
 los juegos, los tips que te mostró y el historial de las mediciones de tu equipo. Nada de eso se
 copia a ningún otro lado. No hay cuenta que crear ni sesión que iniciar, así que no hay una copia
-de tus datos en ningún servidor nuestro — porque no hay servidor nuestro.</p>
+de tus datos esperando en ningún servidor: no tenemos ningún servicio que los guarde. El único
+servidor que sí operamos es el que lleva una sugerencia o un reporte de error hasta nosotros
+cuando lo mandás, y sólo lleva lo que vos escribiste — está explicado en
+<a href="#sugerencias">Sugerencias y reportes de error</a>.</p>
 
 <h3>Tus contraseñas</h3>
 <p>El gestor de contraseñas cifra su bóveda en tu máquina antes de escribirla al disco. Esa
@@ -194,11 +199,13 @@ política de privacidad de ellos, no a la nuestra.</p>
   contesta sin saber nada de vos.</p>
 </div>
 
-<h2>Sugerencias y reportes de error</h2>
+<h2 id="sugerencias">Sugerencias y reportes de error</h2>
 <p>Si usás el formulario de la app para mandarnos una sugerencia, un error o una queja, lo que
-escribiste y las capturas que hayas adjuntado nos llegan a nosotros. No se adjunta nada solo, y
-no se manda nada hasta que apretás el botón. Lo usamos para arreglar y mejorar la app, y no lo
-usamos para ninguna otra cosa.</p>
+escribiste y las capturas que hayas adjuntado nos llegan a nosotros. Viajan por un intermediario
+que operamos nosotros, <code>goblin-relay.goblinhelpercompany.workers.dev</code>, que pasa el
+mensaje y no se queda con nada más: ningún perfil tuyo, ningún identificador, nada de tu máquina.
+No se adjunta nada solo, y no se manda nada hasta que apretás el botón. Lo usamos para arreglar y
+mejorar la app, y no lo usamos para ninguna otra cosa.</p>
 
 <h2>Menores</h2>
 <p>Goblin Helper no está dirigido a menores de 13 años y no recolectamos nada de ellos a
