@@ -80,16 +80,18 @@
   <nav class="idiomas"><a href="index.html">English</a> · <span aria-current="page">Español</span></nav>
   <p class="producto">Goblin Helper</p>
   <h1>Política de privacidad</h1>
-  <p class="fecha">Última actualización: 27 de octubre de 2026</p>
+  <p class="fecha">Última actualización: 10 de noviembre de 2026</p>
 </header>
 
 <div class="nota fuerte">
   <p><strong>La versión corta.</strong> Goblin Helper funciona en tu computadora. No hay cuenta,
-  no hay registro y no hay analíticas, y no nos llega nada tuyo por detrás. Todo lo que podría
+  no hay registro y no nos llega nada tuyo por detrás. Todo lo que podría
   leer algo de tu máquina viene <strong>apagado de fábrica</strong> y se queda apagado hasta que
-  vos lo prendas. Y si lo volvés a apagar, lo que había juntado se borra. Lo único que nos llega
-  alguna vez es una sugerencia o un reporte de error, y sólo cuando lo escribís vos y apretás
-  enviar.</p>
+  vos lo prendas. Y si lo volvés a apagar, lo que había juntado se borra. Nos llega algo en tres
+  casos, y los tres los empezás vos: cuando escribís una sugerencia o un reporte de error y
+  apretás enviar; si prendés la <strong>base de tips compartida</strong>, el pulgar que le ponés
+  a un tip; y si prendés las <strong>estadísticas de uso</strong>, qué funciones usaste. Los dos
+  últimos vienen apagados, no llevan ningún identificador tuyo y están explicados más abajo.</p>
 </div>
 
 <h2>Quiénes somos</h2>
@@ -137,10 +139,13 @@ apagado. Está explicado en <a href="#ia">El asistente de IA</a>.</p>
 <p>Ahí están tu perfil, tus ajustes, tus recordatorios, tus contraseñas guardadas, tus récords de
 los juegos, los tips que te mostró y el historial de las mediciones de tu equipo. Nada de eso se
 copia a ningún otro lado. No hay cuenta que crear ni sesión que iniciar, así que no hay una copia
-de tus datos esperando en ningún servidor: no tenemos ningún servicio que los guarde. El único
-servidor que sí operamos es el que lleva una sugerencia o un reporte de error hasta nosotros
-cuando lo mandás, y sólo lleva lo que vos escribiste — está explicado en
-<a href="#sugerencias">Sugerencias y reportes de error</a>.</p>
+de tus datos esperando en ningún servidor: no tenemos ningún servicio que los guarde.</p>
+<p>Servidores propios operamos dos, y <strong>ninguno de los dos tiene dónde anotar quién sos</strong>:
+el que lleva una sugerencia o un reporte de error hasta nosotros cuando lo mandás, y sólo lleva
+lo que vos escribiste — está explicado en
+<a href="#sugerencias">Sugerencias y reportes de error</a> —, y el de la base de tips compartida
+y las estadísticas de uso, que no recibe nada hasta que prendas una de esas dos cosas. Los dos
+están explicados más abajo.</p>
 
 <h3>Tus contraseñas</h3>
 <p>El gestor de contraseñas cifra su bóveda en tu máquina antes de escribirla al disco. Esa
@@ -178,6 +183,12 @@ rechaza antes de hacer el pedido. Ésta es la lista completa, y para qué es cad
 
   <dt>Mandarnos una sugerencia o reportar un error, cuando apretás enviar</dt>
   <dd>goblin-relay.goblinhelpercompany.workers.dev · discord.com · discordapp.com</dd>
+
+  <dt>Base de tips compartida — sólo si la prendés, y viene apagada</dt>
+  <dd>goblin-tips.goblinhelpercompany.workers.dev</dd>
+
+  <dt>Estadísticas de uso anónimas — sólo si las prendés, y vienen apagadas</dt>
+  <dd>goblin-tips.goblinhelpercompany.workers.dev</dd>
 </dl>
 
 <p>Si no prendés nada y no usás la IA, la app no contacta a ninguno.</p>
@@ -192,6 +203,42 @@ rechaza antes de hacer el pedido. Ésta es la lista completa, y para qué es cad
   pasa con cualquier programa que consulte una página. Estos sitios se eligieron porque su
   licencia permite reusar el texto citando la fuente, y cada tip que salga de uno de ellos
   muestra de dónde salió.</p>
+</div>
+
+<div class="nota">
+  <p><strong>Sobre la base de tips compartida.</strong> Viene <strong>apagada</strong> y sólo
+  funciona si la prendés vos. Mientras esté apagada, nada de esto pasa.</p>
+  <p>Si la prendés: cuando le das el pulgar arriba a un tip que salió de una wiki, se manda
+  <strong>el tip</strong> —su texto y la fuente de la que salió— a un servidor que operamos
+  nosotros, para que otra persona que juegue lo mismo pueda recibirlo. <strong>Lo que no se
+  manda:</strong> ningún identificador tuyo, ninguna cuenta, ningún identificador de tu
+  máquina, ni tu país. El servidor no guarda la dirección IP en ninguna tabla: no tiene columna
+  donde ponerla. Tampoco se mandan nunca los tips escritos a mano que vienen con la app, ni tus
+  intereses, ni tus notas, ni tu perfil, ni la lista de programas que tenés.</p>
+  <p>Ningún tip aparece en la base porque junte votos: <strong>todo lo que llega lo lee una
+  persona</strong> antes de que lo reciba nadie más. Y para recibir los tips aprobados se baja
+  el paquete completo y la elección se hace en tu computadora, así que el servidor no aprende
+  qué juegos te interesan. No existe una forma de preguntarle «dame los tips de este juego».</p>
+</div>
+
+<div class="nota">
+  <p><strong>Sobre las estadísticas de uso.</strong> Vienen <strong>apagadas</strong> y son un
+  permiso distinto del de los tips: podés prender una cosa y no la otra. Mientras estén
+  apagadas, nada de esto pasa.</p>
+  <p>Si las prendés, una vez por semana se manda <strong>un resumen</strong>: cuántas veces se
+  usó cada función de la app en esos siete días, cuántas partidas se jugaron a cada minijuego,
+  cuántas veces se abrió el programa, cuántos minutos en total, la versión que tenés instalada
+  y un rango de antigüedad del estilo «más de medio año». Sirve para una sola cosa: saber qué
+  funciones conviene mejorar y cuáles no usa nadie.</p>
+  <p><strong>Lo que no se manda:</strong> ningún identificador tuyo, ninguna cuenta, ningún
+  identificador de tu máquina, ni tu país. <strong>No se manda el día a día</strong> —ni a qué
+  hora usás la computadora, ni qué días no la usaste—: va el total de la semana y nada más.
+  Tampoco la fecha exacta en que instalaste el programa, sino un rango. Y nunca los nombres de
+  los programas que tenés, los juegos que el goblin detecta, tus intereses, tus notas, tus
+  recordatorios, tus contraseñas ni nada que hayas escrito.</p>
+  <p>El servidor no guarda la dirección IP en ninguna tabla: no tiene columna donde ponerla, y
+  <strong>a los resúmenes no se les adjunta ningún identificador</strong>, así que nada los
+  ata entre sí ni a vos.</p>
 </div>
 
 <h2 id="ia">El asistente de IA</h2>

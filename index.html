@@ -80,16 +80,19 @@
   <nav class="idiomas"><span aria-current="page">English</span> · <a href="es.html">Español</a></nav>
   <p class="producto">Goblin Helper</p>
   <h1>Privacy Policy</h1>
-  <p class="fecha">Last updated: 27 October 2026</p>
+  <p class="fecha">Last updated: 10 November 2026</p>
 </header>
 
 <div class="nota fuerte">
   <p><strong>The short version.</strong> Goblin Helper runs on your computer. There is no
-  account, no sign-up and no analytics, and nothing about you is sent to us in the background.
+  account, no sign-up, and nothing about you is sent to us in the background.
   Every feature that could read something about your machine is <strong>switched off when you
   install it</strong>, and stays off until you turn it on yourself. If you turn one off again,
-  what it had collected is deleted. The only thing that ever reaches us is a suggestion or a bug
-  report, and only when you write one and press send.</p>
+  what it had collected is deleted. Something reaches us in three cases, and you start all
+  three: when you write a suggestion or a bug report and press send; if you turn on the
+  <strong>shared tips database</strong>, the thumb you give a tip; and if you turn on
+  <strong>usage statistics</strong>, which features you used. The last two are off by default,
+  carry no identifier of yours, and are explained below.</p>
 </div>
 
 <h2>Who we are</h2>
@@ -137,10 +140,13 @@ the internet.</strong> It is also off by default. See <a href="#ia">The AI assis
 <p>That includes your profile, your settings, your reminders, your saved passwords, your game
 scores, the tips you have been shown and the history of your hardware readings. None of it is
 copied anywhere else. There is no account to create and nothing to log into, so there is no
-copy of your data waiting on a server somewhere: we run no service that stores it. The one
-server we do operate is the relay that carries a suggestion or a bug report to us when you send
-one, and it only ever carries what you wrote yourself — see
-<a href="#sugerencias">Suggestions and bug reports</a>.</p>
+copy of your data waiting on a server somewhere: we run no service that stores it.</p>
+<p>We operate two servers of our own, and <strong>neither has anywhere to record who you
+are</strong>: the relay that carries a suggestion or a bug report to us when you send one, and
+only ever carries what you wrote yourself — see
+<a href="#sugerencias">Suggestions and bug reports</a> — and the one behind the shared tips
+database and usage statistics, which receives nothing until you turn one of those two on. Both
+are explained below.</p>
 
 <h3>Your passwords</h3>
 <p>The built-in password manager encrypts its vault on your machine before writing it to disk.
@@ -178,6 +184,12 @@ made. This is the complete list, and what each entry is for.</p>
 
   <dt>Sending us a suggestion or a bug report, when you press send</dt>
   <dd>goblin-relay.goblinhelpercompany.workers.dev · discord.com · discordapp.com</dd>
+
+  <dt>Shared tip database — only if you turn it on, and it ships turned off</dt>
+  <dd>goblin-tips.goblinhelpercompany.workers.dev</dd>
+
+  <dt>Anonymous usage statistics — only if you turn them on, and they ship turned off</dt>
+  <dd>goblin-tips.goblinhelpercompany.workers.dev</dd>
 </dl>
 
 <p>If you never turn anything on and never use the AI, the app does not contact any of them.</p>
@@ -191,6 +203,42 @@ made. This is the complete list, and what each entry is for.</p>
   came from; that is not something Goblin Helper controls and happens with any program that
   fetches a page. These sites were chosen because their licence allows reusing the text with
   attribution, and every tip that comes from one of them shows where it came from.</p>
+</div>
+
+<div class="nota">
+  <p><strong>About the shared tip database.</strong> It ships <strong>turned off</strong> and
+  only works if you turn it on yourself. While it is off, none of this happens.</p>
+  <p>If you turn it on: when you give a thumbs up to a tip that came from a wiki, <strong>the
+  tip</strong> — its text and the source it came from — is sent to a server we operate, so that
+  someone else who plays the same game can receive it. <strong>What is not sent:</strong> no
+  identifier of yours, no account, no identifier of your machine, not your country. The server
+  does not store the IP address in any table: it has no column to put it in. The hand-written
+  tips that ship with the app are never sent either, nor your interests, your notes, your
+  profile, or the list of programs you have installed.</p>
+  <p>No tip ever reaches the database by collecting votes: <strong>a person reads everything
+  that arrives</strong> before anyone else receives it. And to receive approved tips the whole
+  package is downloaded and the choosing happens on your computer, so the server does not learn
+  which games interest you. There is no way to ask it “give me the tips for this game”.</p>
+</div>
+
+<div class="nota">
+  <p><strong>About usage statistics.</strong> They ship <strong>turned off</strong> and are a
+  separate permission from the tips one: you can turn on one and not the other. While they are
+  off, none of this happens.</p>
+  <p>If you turn them on, once a week <strong>one summary</strong> is sent: how many times each
+  feature of the app was used over those seven days, how many rounds of each minigame were
+  played, how many times the program was opened, how many minutes in total, the version you
+  have installed, and an age range such as “more than six months”. It serves one purpose:
+  knowing which features are worth improving and which nobody uses.</p>
+  <p><strong>What is not sent:</strong> no identifier of yours, no account, no identifier of
+  your machine, not your country. <strong>The day-by-day breakdown is not sent</strong> —
+  neither what time you use your computer nor which days you did not: the week's total goes,
+  and nothing else. Nor the exact date you installed the program, only a range. And never the
+  names of the programs you have, the games the goblin detects, your interests, your notes,
+  your reminders, your passwords or anything you have typed.</p>
+  <p>The server does not store the IP address in any table: it has no column to put it in, and
+  <strong>no identifier is attached to the summaries</strong>, so nothing ties them to each
+  other or to you.</p>
 </div>
 
 <h2 id="ia">The AI assistant</h2>
